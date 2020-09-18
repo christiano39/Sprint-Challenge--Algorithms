@@ -5,7 +5,7 @@
 a) This snippet of code will run at O(n) time because even though the while loop is looping up to n^3, the code inside the loop is incremented by n^2, meaning that it will run n times. For example, given an n=4, the while loop will run until a is 4*4*4 or 64, but a is incremented by 4*4 or 16. The loop will run 4 times before a is equal to 64.
 
 
-b) This snippet of code will run at O(n^2) because there is a nested loop, and even though the inner loop will run 1/2n times, we can drop the constant. In this case, O(n * 1/2n) becomes O(n^2).
+b) This snippet of code will run at O(n log n) because there is a nested loop, and the inner loop gets smaller each time, so it has a O(log n), and the outer loop has a linear runtime of O(n)
 
 
 c) This snippet of code will run at O(n) because it will make n recursive calls, and for each recursive call, it is performing operations that are constant time O(1), thus a final runtime of O(n).
